@@ -1,4 +1,4 @@
-export default function addTask () {
+export default function addTask() {
   const arrayOfTasksTest = JSON.parse(localStorage.getItem('arrayOfTasksTest')) || [];
   const taskInput = document.querySelector('.taskInput');
   const toDoList = document.querySelector('.list');
@@ -21,6 +21,4 @@ export default function addTask () {
   </div>
   `;
   return newTask;
-};
-
-
+}
