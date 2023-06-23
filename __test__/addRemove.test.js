@@ -43,8 +43,8 @@ describe('Add task', () => {
 });
 
 // Test for 'remove task'
-describe("deleteTask", () => {
-  test("Removing an item from DOM", () => {
+describe('deleteTask', () => {
+  test('Removing an item from DOM', () => {
     document.body.innerHTML = `
     <section class="main">
     <h1 class="heading">To Do List</h1>
@@ -77,7 +77,7 @@ describe("deleteTask", () => {
   </section>
   `;
     removeTask(1);
-    const toDoList = document.querySelector(".list");
+    const toDoList = document.querySelector('.list');
     expect(toDoList.children).toHaveLength(0);
   });
 });
